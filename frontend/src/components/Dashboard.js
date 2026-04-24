@@ -69,7 +69,7 @@ const Dashboard = () => {
   const [amount, setAmount] = useState("");
   const [category, setCategory] = useState("");
 
-  const API = "http://localhost:5000"; // ✅ FIXED
+  const API = "https://expense-tracker-akan.onrender.com"; // ✅ FIXED
 
   // ✅ FETCH DATA
   const fetchData = useCallback(async () => {

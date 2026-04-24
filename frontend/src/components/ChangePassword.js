@@ -18,7 +18,7 @@ const ChangePassword = () => {
       const token = localStorage.getItem("token");
 
       const res = await axios.put(
-        "http://localhost:5000/api/auth/change-password",
+        "https://expense-tracker-akan.onrender.com/api/auth/change-password",
         form,
         {
           headers: {
