@@ -32,7 +32,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const API = "http://localhost:5000";
+  const API = "https://expense-tracker-akan.onrender.com";
 
   // ✅ FIXED WARNING (navigate added)
   useEffect(() => {

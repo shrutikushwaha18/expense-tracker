@@ -35,7 +35,7 @@ function Signup() {
   const handleSignup = async () => {
     try {
       await axios.post(
-        "http://localhost:5000/auth/register",
+        "https://expense-tracker-akan.onrender.com/auth/register",
         form
       );
 

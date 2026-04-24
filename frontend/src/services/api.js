@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://backend-1lmp.onrender.com";
+const BASE_URL = "https://expense-tracker-akan.onrender.com";
 
 // ✅ ADD EXPENSE
 export const addExpense = async (expense) => {
@@ -41,7 +41,7 @@ export const deleteExpense = async (id) => {
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://expense-tracker-akan.onrender.com",
 });
 
 API.interceptors.request.use((req) => {
