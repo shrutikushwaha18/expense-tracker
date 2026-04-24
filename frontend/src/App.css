@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f1d963, #0ea5e9);
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px 80px;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 40px;
+}
+
+/* GLASS BASE */
+.glass {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* ADD EXPENSE */
+.add-expense-card {
+  padding: 25px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.section-title {
+  margin-bottom: 18px;
+}
+
+.add-expense-form {
+  display: grid;
+  gap: 15px;
+}
+
+.add-expense-form input {
+  background: rgba(80, 76, 76, 0.25);
+  border: none;
+  padding: 15px 20px;
+  border-radius: 90px;
+  color: white;
+}
+
+.add-expense-form input::placeholder {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.add-expense-form button {
+  background: rgba(102, 229, 132, 0.655);
+  color: white;
+  border: none;
+  border-radius: 90px;
+  padding: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* CARDS */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.expense-card {
+  padding: 22px;
+  color: white;
+  position: relative;
+  transition: transform 0.25s ease;
+}
+
+.expense-card:hover {
+  transform: translateY(-8px);
+}
+
+.category {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.35);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.amount {
+  margin-top: 18px;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: #ef4444;
+  color: white;
+  cursor: pointer;
+}
+
+/* TOTAL */
+.total-card {
+  margin-top: 55px;
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+.total-card p {
+  font-size: 38px;
+  font-weight: 900;
+}
+.expense-section {
+  margin-top: 30px;
+}
+
+.section-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Total card */
+.total-card {
+  max-width: 300px;
+  margin-bottom: 30px;
+  color: rgba(128, 135, 132, 0.542);
+
+}
+
+.total-card p {
+  font-size: 28px;
+  font-weight: bold;
+  
+}
+
+/* Grid layout */
+.expense-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+;
+}
+
+/* Expense card */
+.expense-card h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  box-sizing: 30px;
+  color: rgba(128, 135, 132, 0.542);
+
+}
+
+.amount {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 6px 0;
+  color: rgba(128, 135, 132, 0.542);
+
+}
+
+.category {
+  display: inline-block;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+/* Buttons */
+.actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.edit {
+  background: #38bdf8;
+}
+
+.delete {
+  background: #ef4444;
+  color: white;
+}
+
+.save {
+  background: #22c55e;
+}
+
+.cancel {
+  background: #94a3b8;
+}
+/* GRID */
+.expense-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* GLASS */
+.glass {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* CARD */
+.expense-card h3 {
+  font-size: 20px;
+}
+
+.amount {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.category {
+  display: inline-block;
+  background: rgba(24, 23, 23, 0.3);
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+
+/* BUTTONS */
+.actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* TOTAL */
+.total-card {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+/* MODAL OVERLAY */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* MODAL CARD (DESKTOP) */
+.modal-card {
+  width: 420px;
+  max-width: 90%;
+  animation: scaleIn 0.3s ease;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header .close {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.modal-card input {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.modal-actions {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.save {
+  background: #22c55e;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 10px;
+}
+
+.cancel {
+  background: #94a3b8;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 10px;
+}
+
+/* MOBILE FULL-WIDTH MODAL */
+@media (max-width: 768px) {
+  .modal-card {
+    width: 95%;
+    border-radius: 20px;
+  }
+}
+
+/* ANIMATION */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.app {
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #b3d8f0, #fef3c7);
+  transition: background 0.4s ease;
+}
+.app.dark {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: white;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark-toggle {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.logout-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+
+  background: linear-gradient(135deg, #ff6b6b, #ff4d4d);
+  color: white;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 77, 77, 0.4);
+}
+
+
+
